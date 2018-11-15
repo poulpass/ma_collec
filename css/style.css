@@ -1,0 +1,276 @@
+html{
+    height: calc(100% - 100px);
+    overflow-x: hidden;
+}
+
+body{
+    height: 100%;
+}
+
+nav{
+    margin-bottom: 15px !important;
+}
+
+.bigdropdown{
+    top : -60px;
+    width : 250px !important;
+}
+
+.userface{
+    height: 60px !important;
+    width: 60px !important;
+}
+
+.userpic{
+    margin-top: 10px;
+    margin-left: -6px;
+    border:solid;
+    border-color: white;
+    border-radius: 5px;
+}
+.title{
+    font-weight: bold;
+}
+
+.big-title{
+    font-size: 18px !important;
+}
+
+.topdown{
+    margin-top: 15px;
+    display: flex;
+    z-index: 3;
+    bottom: 0;
+}
+
+#btn-collec{
+    width: 100% !important;
+    height: 150px;
+    border-radius: 150px 0% 0% 150px;
+}
+
+#btn-amis{
+    width: 100% !important;
+    height: 150px;
+    border-radius: 0% 150px 150px 0%;
+}
+
+#btn-1{
+    width: 100% !important;
+    height: 150px;
+    border-radius: 100px 0px 0px 0px;
+    border: solid red;
+    background-image: linear-gradient(to right, red 170px, white 10%, white 20%);
+
+}
+
+#btn-2{
+    width: 100% !important;
+    height: 150px;
+    border-radius: 0px 100px 0px 0px;
+    border: solid blue;
+    background-image: linear-gradient(to left, blue 170px, white 10%, white 20%);
+
+}
+
+#btn-3{
+    width: 100% !important;
+    height: 150px;
+    border-radius: 0px 0px 0px 100px;
+    border: solid green;
+    background-image: linear-gradient(to right, green 170px, white 10%, white 20%);
+}
+
+#btn-4{
+    width: 100% !important;
+    height: 150px;
+    border-radius: 0px 0px 100px 0px;
+    border: solid orange;
+    background-image: linear-gradient(to left, orange 170px, white 10%, white 20%);
+}
+
+#btn-5{
+    width: 100% !important;
+    height: 100px;
+    border-radius: 100px 0px 0px 100px;
+    border: solid red;
+    background-image: linear-gradient(to right, red 170px, white 10%, white 20%);
+}
+
+#btn-6{
+    width: 100% !important;
+    height: 100px;
+    border-radius: 100px 0px 0px 100px;
+    border: solid blue;
+    background-image: linear-gradient(to right, blue 170px, white 10%, white 20%);
+}
+
+#btn-7{
+    width: 100% !important;
+    height: 100px;
+    border-radius: 100px 0px 0px 100px;
+    border: solid green;
+    background-image: linear-gradient(to right, green 170px, white 10%, white 20%);
+}
+
+#btn-8{
+    width: 100% !important;
+    height: 100px;
+    border-radius: 100px 0px 0px 100px;
+    border: solid orange;
+    background-image: linear-gradient(to right, orange 170px, white 10%, white 20%);
+}
+
+#btn-5, #btn-6, #btn-7, #btn-8{
+    padding-top: 30px;
+    padding-left: 10%;
+    font-size: 50px !important;
+}
+
+#btn-1, #btn-2, #btn-3, #btn-4{
+    padding-top: 60px;
+    font-size: 50px !important;
+}
+
+.collecico{
+    padding-right: 30px;
+    font-size: 100px !important;
+}
+@media screen and (max-width: 500px){
+    #btn-5, #btn-6, #btn-7, #btn-8{
+        font-size: 25px !important;
+    }
+}
+@media screen and (max-width: 1260px){
+    #btn-1, #btn-2, #btn-3, #btn-4{
+        padding-top: 60px;
+        font-size: 30px !important;
+    }
+}
+@media screen and (min-width: 992px){
+    .small-bye{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 992px){
+    .collecico2{
+        padding-top: 0px;
+        font-size: 60px !important;
+    }
+
+    #btn-5, #btn-6, #btn-7, #btn-8, {
+        padding-top: 30px;
+        padding-left: 50px;
+        font-size: 50px !important;
+    }
+}
+.maxH{
+    height: 100%;
+}
+
+.collecico{
+    padding-left: 30px;
+    font-size: 100px !important;
+}
+
+.amisico{
+    padding-right: 30px;
+    font-size: 100px !important;
+}
+
+#btn-collec, #btn-amis{
+    padding-top: 60px;
+    font-size: 50px !important;
+}
+
+.ico-resize{
+    padding-top: 10px;
+    font-size: 50px !important;
+    width: 65px !important;
+    height: 65px !important;
+    left: 13px !important;
+}
+
+ .collection-item.avatar{
+    padding-left: 100px !important;
+    border-radius: 150px 0% 0% 150px;
+    
+}
+.demande_ami, .collection{
+    border: none !important;
+    border-radius: 0;
+}
+
+.btndeletedit{
+    height: 55px;
+    width: 55px;
+    border-radius: 2px;
+    padding-left: 0;
+}
+
+.editdelet{
+    font-size: 40px !important;
+    padding-left: 6px; 
+}
+
+.delete{
+    right: 90px !important;
+    padding-left: 2px; 
+
+}
+
+.switch label .lever:after, .switch label input[type=checkbox]:checked + .lever:after{
+    background-color: #673ab7 !important;
+}
+
+.switch label .lever, .switch label input[type=checkbox]:checked + .lever{
+    background-color: #9575cd !important;
+
+}
+
+.option_red{
+    background-color: red !important;
+}
+
+.dropdown-content li > span{
+    color: black !important;
+}
+
+.beat:hover {
+    animation: 1.5s infinite wiggle;
+  }
+  
+  @keyframes wiggle {
+    0% {
+        transform: rotate(-2deg) scale( 1 );
+    }
+    25% {
+      transform: rotate(-0deg) scale( 1.05 );
+    }
+ 
+    50% {
+        transform: rotate(2deg) scale( 1 );
+      }
+
+    75% {
+        transform: rotate(0deg) scale( 1.05 );
+    }
+    100% {
+        transform: rotate(-2deg) scale( 1 );
+      }
+  }
+
+  .navpic{
+      border-radius: 100% !important;
+      height: 50px;
+      width: 50px;
+      border: solid;
+      border-color: white;
+      margin-top: 6px;
+      margin-left: 10px;
+      padding: 3px;
+  }
+
+.demande_ami{
+    border-radius: 0px !important;
+}
