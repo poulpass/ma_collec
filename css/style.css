@@ -274,3 +274,10 @@ nav{
 .demande_ami{
     border-radius: 0px !important;
 }
+
+.lite-item{
+    border-radius: 150px 0% 0% 150px;
+    margin: 2px;
+    min-height: 20px !important;
+    height: 15px !important;
+}

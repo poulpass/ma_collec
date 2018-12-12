@@ -25,16 +25,16 @@
             <div class="col l6 s8">
                 <div class="input-field">
                     <i class="material-icons prefix">search</i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">Chercher</label>
+                    <input id="loupe" type="text" class="validate">
+                    <label for="loupe">Chercher</label>
                 </div>
   
             </div>
             <div class="col l1 s2">
-                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">sort_by_alpha</i></a>
+                <a id="alpha" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">sort_by_alpha</i></a>
             </div>
             <div class="col l1 s2">
-                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">event</i></a>
+                <a id="date" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">event</i></a>
             </div>
 
 
@@ -44,46 +44,41 @@
     <div class="container">
 
  
-        <ul class="collection">
-            <li class="collection-item avatar red">
-                <i class="ico-resize material-icons circle white red-text">import_contacts</i>
-                <span class="title big-title">Title</span> 
-                <br>
-                <span>Tome n°</span>
-                <span class="title">1</span>
-                <br>
-                <span>Auteur : </span>
-                <span class="title">Name</span>
-                <a href="#modaledit" class="modal-trigger waves-effect btn-large secondary-content red darken-4 white-text btndeletedit valign-wrapper"><i class="material-icons editdelet">border_color</i></a>
-                <a href="#modaldelet" class="modal-trigger waves-effect btn-large secondary-content red darken-4 white-text btndeletedit valign-wrapper delete"><i class="material-icons editdelet">delete</i></a>
+        <ul class="collection" id="affichage_book">
+ 
 
-            </li>
         </ul>
         
     </div>
 
     <div id="modaladd" class="modal">
-        <div class="modal-content">
+        <form class="modal-content"  method="post">
             <h4>Ajouter à la collec</h4>
-            <input type="text" id="titre" value="">
+            <input type="text" id="titre" value="" name="titre">
             <label for="titre">Titre</label>
-            <input type="number" id="numero" value="">
+            <input type="number" id="numero" value="" name="tome">
             <label for="numero">Numero</label>
-            <input type="text" id="autor" value="">
+            <input type="text" id="autor" value="" name="autor">
             <label for="autor">Auteur</label>
-            <div class="switch">
-                <label>
-                BD
-                <input type="checkbox">
-                <span class="lever"></span>
-                Livre
-                </label>
-            </div>
-        </div>
-        <div class="modal-footer">
+                <p>
+                    <label>
+                        <input name="bd" id="bd" type="radio" checked='checked' value="t"/>
+                        <span>BD</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="bd" type="radio" value="f"/>
+                        <span>Livre</span>
+                    </label>
+                </p>
+                
+            <div class="modal-footer">
             <a href="#!" class="modal-close waves-effect waves-green btn-flat">Annuler</a>
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ajouter</a>
+            <button id="ajoutlivre" class="waves-effect waves-green btn-flat" >Ajouter</button>
         </div>
+        </form>
+  
     </div>
 
     <div id="modaledit" class="modal">
@@ -117,6 +112,8 @@
 	<script src="js/librairies/jquery.js"></script>
     <script src="js/librairies/materialize.js"></script>
     <script src="js/material.js"></script>
+    <script src="js/ajoutAmi.js"></script>
+    <script src="js/affichage_collec.js"></script>
 
     
 </body>
