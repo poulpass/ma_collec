@@ -23,7 +23,10 @@ if ($requeteCheckNew != null){
     <span>Collection de </span>
     <span class="title">1 </span>
     <span>objets</span>
-    <a href="#modaledit" class="modal-trigger waves-effect btn-large secondary-content red darken-4 white-text btndeletedit valign-wrapper"><i class="material-icons editdelet">remove_red_eye</i></a>
+    <form method="post" action="bookami.php">
+        <input name="id" type="hidden" value="'.$requeteContentUser['user_id'].'">
+        <button type="submit" class="waves-effect btn-large secondary-content red darken-4 white-text btndeletedit valign-wrapper"><i class="material-icons editdelet">remove_red_eye</i></button>
+    </form>
     <a href="#'.$requeteContentUser['user_id'].'" class="modal-trigger waves-effect btn-large secondary-content red darken-4 white-text btndeletedit valign-wrapper delete"><i class="material-icons editdelet">delete</i></a>
     
     <div id="'.$requeteContentUser['user_id'].'" class="modal red white-text">

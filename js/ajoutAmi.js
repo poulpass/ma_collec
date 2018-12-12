@@ -45,3 +45,25 @@ $(".deleteUser").click(function(){
     })
     $(this).parent().hide();
   });
+
+  $("#ajoutlivre").click(function(){
+    var titre = $("#titre").val();
+    var tome = $("#numero").val();
+    var autor = $("#autor").val();
+    var bd = $("#bd").val();
+    $.ajax({
+      type:"POST",
+      url:"newbook.php",
+      data:{
+        titre: titre,
+        tome: tome,
+        autor: autor,
+        bd: bd
+      },
+      success: function(arg){
+        M.toast({html: arg});  
+      }
+    })
+  });
+
+  
